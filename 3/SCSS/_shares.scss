@@ -1,0 +1,21 @@
+//MIXINS
+
+@mixin flex($justify:null, $alignment:null, $direction:null) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignment;
+    flex-direction: $direction;
+}
+
+@mixin circle($size, $bgColor:null, $borderColor: null, $type:null) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    @if $type == fill {
+        background-color: $bgColor;
+    } @else {
+        border: 3px solid $borderColor;
+    }
+    
+}
+
