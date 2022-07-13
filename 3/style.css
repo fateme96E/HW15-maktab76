@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Exo+2:ital,wght@1,300&family=Fredoka+One&family=Poppins:wght@300&family=Raleway&family=Roboto:wght@300&family=Ropa+Sans&family=Rubik:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Exo+2:ital,wght@1,300&family=Fredoka+One&family=Poppins:wght@300&family=Raleway&family=Roboto:wght@300&family=Ropa+Sans&family=Rubik:ital,wght@1,300&family=&display=swap");
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #d5d5d5;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  background: url(../images/main-background.png);
+  height: 812px;
+}
+
+.container nav {
+  width: 1500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container nav .text-container {
+  width: 280px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container nav .text-container p {
+  font-size: 12px;
+}
+
+.container nav .icon-container {
+  margin-right: -80px;
+}
+
+.container nav .icon-container img {
+  width: 120px;
+  height: 120px;
+}
+
+.container nav .icon-container img:hover {
+  border-radius: 30%;
+  background-color: #4b4b4b7e;
+  -webkit-box-shadow: 0 0 5px 10px #5858584a;
+          box-shadow: 0 0 5px 10px #5858584a;
+}
+
+.container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container main .left-container {
+  margin: 92px 0 0 100px;
+}
+
+.container main .left-container h1 {
+  font-size: 52px;
+  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container main .left-container span {
+  color: #fe3636;
+}
+
+.container main .left-container p {
+  margin-top: -15px;
+  font-size: 24px;
+}
+
+.container main .left-container button {
+  width: 130px;
+  border: none;
+  border-radius: 8px;
+  color: #d5d5d5;
+  background-color: #fe3636;
+  margin-top: 62px;
+  padding: 5px 3px 5px 9px;
+  font-weight: bold;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container main .left-container button .icon-container {
+  width: 26px;
+  border-radius: 5px;
+  background-color: #c97b7b;
+  margin-left: 28px;
+  padding: 5px 2px 5px 2px;
+}
+
+.container main .left-container button:hover {
+  -webkit-box-shadow: 0 0 50px 25px #b40c0c64;
+          box-shadow: 0 0 50px 25px #b40c0c64;
+  background-color: #c60a0a;
+}
+
+.container main .right-container {
+  margin: 92px 400px 0 0;
+}
+
+.container main .right-container h2 {
+  line-height: 42px;
+  margin-top: -8px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.container main .right-container h3 {
+  color: #9b9b9b;
+  font-weight: lighter;
+  line-height: 24px;
+}
+
+.container main .right-container p {
+  color: #fe3636;
+}
+
+.container main .right-container p:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #fe3636;
+  padding-bottom: 5px;
+}
+
+.container main .right-container p:last-child i {
+  color: #fe3636;
+  font-size: 16px;
+}
+
+.container main .right-container p:last-child:hover {
+  -webkit-box-shadow: 0 0 50px 25px #b40c0c64;
+          box-shadow: 0 0 50px 25px #b40c0c64;
+  color: #d5d5d5;
+}
+
+.container footer {
+  width: 1530px;
+  height: 110px;
+  margin: 100px 0 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container footer .left-container {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container footer .left-container .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container footer .left-container .icon-container i:hover {
+  -webkit-box-shadow: 0 0 30px 15px #c3b8b864;
+          box-shadow: 0 0 30px 15px #c3b8b864;
+  background-color: #c3b8b83d;
+}
+
+.container footer .left-container .web-container {
+  width: 215px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container footer .left-container .web-container .icon-container {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe3636;
+}
+
+.container footer .right-container {
+  width: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container footer .right-container .text-container {
+  line-height: 32px;
+}
+
+.container footer .right-container:hover {
+  border: 1px solid #c8c8c857;
+  padding: 10px;
+}
+
+.container .decorative-circle-container {
+  position: absolute;
+}
+
+.container .decorative-circle-container .green-circle {
+  margin: 100px 0 0 1300px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #7ffff0;
+}
+
+.container .decorative-circle-container .red-circle {
+  margin: -60px 0 0 1335px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fe3636;
+}
+
+.container .decorative-circle-container .blue-circle {
+  margin: 50px 0 0 1445px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #00ccff;
+}
+/*# sourceMappingURL=style.css.map */
