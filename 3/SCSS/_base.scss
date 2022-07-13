@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    color: $text-color;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background: url(#{$background-image});
+    height: $screenSize;
+    nav {
+        width: 1500px;
+        margin: 0 auto;
+        @include flex(space-between);
+        .text-container {
+            width: 280px;
+            margin-top: 20px;
+            @include flex(space-between, baseline);
+            p{
+                font-size: 12px;
+            }
+
+        }
+        .icon-container {
+            margin-right: -80px;
+            img {
+                width: 120px;
+                height: 120px;
+                &:hover {
+                    border-radius: 30%;
+                    background-color: $menu-hover-bg;
+                    box-shadow: 0 0 5px 10px $menu-hover-border;
+                }
+            }
+        }
+    }
+    main {
+        @include flex(space-between);
+        .left-container {
+            margin: 92px 0 0 100px;
+            h1 {
+                font-size: 52px;font-family: 'Yeseva One', cursive;
+                font-family: 'Roboto', sans-serif;
+            }
+            span {
+                color: $red-color;
+            }
+            p {
+                margin-top: -15px;
+                font-size: 24px;
+
+            }
+            button {
+                width: 130px;
+                border: none;
+                border-radius: 8px;
+                color: $text-color;
+                background-color: $red-color;
+                margin-top: 62px;
+                padding: 5px 3px 5px 9px;
+                font-weight: bold;
+                font-size: 13px;
+                @include flex(space-between, baseline);
+                .icon-container {
+                    width: 26px;
+                    border-radius: 5px;
+                    background-color: $btn-icon-bg;
+                    margin-left: 28px;
+                    padding: 5px 2px 5px 2px;
+                }
+                &:hover {
+                    box-shadow: 0 0 50px 25px $btn-hover-shadow;
+                    background-color: $btn-hover-bg;
+                }
+            }
+        }
+        .right-container {
+            margin: 92px 400px 0 0;
+            h2 {
+                line-height: 42px;
+                margin-top: -8px;
+                font-size:30px;
+                font-weight: lighter;
+            }
+            h3 {
+                color: $text-color-light;
+                font-weight: lighter;
+                line-height: 24px;
+            }
+            p {
+                color: $red-color;
+                &:last-child {
+                    width: fit-content;
+                    border-bottom: 1px solid $red-color;
+                    padding-bottom: 5px;
+                    i{
+                        color: $red-color;
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        box-shadow: 0 0 50px 25px $btn-hover-shadow;
+                        color: $text-color;
+                    }
+                }
+            }   
+        }
+    }
+    footer {
+        width: 1530px;
+        height: 110px;
+        margin: 100px 0 0 100px;
+        @include flex(space-between);
+        .left-container {
+            width: 280px;
+            @include flex(space-between);
+            .icon-container {
+                @include flex(space-between,null,column);
+                i {
+                    &:hover {
+                        box-shadow: 0 0 30px 15px $icon-hover-shadow;
+                        background-color: $icon-hover-bg;
+                    }
+                }
+            }
+            .web-container {
+                width: 215px;
+                align-self: flex-end;
+                @include flex(space-between);
+                .icon-container {
+                    @include circle(20px, $red-color, null, fill);
+                }
+            }
+        }
+        .right-container {
+            width: 116px;            
+            @include flex(null, null, row);
+            align-self: center;
+            .text-container {
+                line-height: 32px;
+            }
+            &:hover {
+                border: 1px solid $text-hover-border;
+                padding: 10px;
+            }
+        }
+    }
+    .decorative-circle-container {
+        position: absolute;
+        .green-circle {
+            margin: 100px 0 0 1300px;
+            @include circle(50px, null, $cyan, null);
+        }
+        .red-circle {
+            margin: -60px 0 0 1335px;
+            @include circle(20px, null, $red-color, null);
+        }
+        .blue-circle {
+            margin: 50px 0 0 1445px;
+            @include circle(36px, $lightlue, null, fill);
+        }
+    }
+}
